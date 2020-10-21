@@ -1,0 +1,17 @@
+:docinfo:
+= exchange
+Documentation
+:nofooter:
+
+This document describes the exchange app.
+
+include::subpage.adoc[]
+
+include::additionalpage.adoc[]
+
+== About
+
+exchange +
+(C) Your Company
+
+https://your-website.com/

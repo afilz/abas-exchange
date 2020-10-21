@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen:Screen xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="/de.abas.screen.model.core/model/core.ecore" xmlns:screen="/de.abas.screen.model.screen/model/screen.ecore" xsi:schemaLocation="/de.abas.screen.model.core/model/core.ecore platform:/de.abas.screen.model.core/model/core.ecore" featureType="erpgui" smartScreenId="NG_DATABASE" smartScreenVersion="1.0.0">
+  <variables searchWord="V-86-06    " group="true" name="Task">
+    <entries englishName="" name="grust" type="I9" guiType="INTEGER" description="" width="9" screenProtection="immer geschützt" meaning="Gruppe" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="grpNo" name="gruppe" type="GRN86" guiType="INTEGER" description="" width="2" screenProtection="immer geschützt" alias="true" meaning="Gruppennummer" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="grpDescr" name="grbez" type="GRB86" guiType="INPUT" description="" width="80" screenProtection="immer geschützt" alias="true" meaning="Gruppenbezeichnung" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="recordNo" name="sn" type="P86" guiType="REFERENCE" description="" width="16" screenProtection="immer geschützt" meaning="Satznummer" changePriority="A" viewPriority="A" primaryName="sn"/>
+    <entries englishName="id" name="id" type="ID86" guiType="REFERENCE" description="" width="30" screenProtection="immer geschützt" alias="true" meaning="Datensatz-ID" changePriority="A" viewPriority="A" primaryName="sn"/>
+    <entries englishName="DBNo" name="dnr" type="AN177" guiType="COMBOBOX" description="" width="3" screenProtection="immer geschützt" meaning="Datenbanknummer" changePriority="A" viewPriority="A" primaryName="dnr"/>
+    <entries englishName="DBDescr" name="dbez" type="A177" guiType="COMBOBOX" description="" width="30" screenProtection="immer geschützt" alias="true" meaning="Datenbankbezeichnung" changePriority="A" viewPriority="A" primaryName="dnr"/>
+    <entries englishName="schemaVersion" name="schemaversion" type="ZAE1" guiType="INPUT" description="" width="22" screenProtection="immer geschützt" meaning="Schemaversion" changePriority="A" viewPriority="A" primaryName="schemaversion"/>
+    <entries englishName="objectGrpNo" name="objgruppe" type="GRN86" guiType="INTEGER" description="" width="2" screenProtection="immer geschützt" meaning="Gruppennummer der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objgruppe"/>
+    <entries englishName="objectGrpDescr" name="objgrbez" type="GRB86" guiType="INPUT" description="" width="80" screenProtection="immer geschützt" alias="true" meaning="Gruppenbezeichnung der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objgruppe"/>
+    <entries englishName="objectDBNo" name="objdnr" type="AN177" guiType="COMBOBOX" description="" width="3" screenProtection="immer geschützt" meaning="Datenbanknummer der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objdnr"/>
+    <entries englishName="objectDBDescr" name="objdbez" type="A177" guiType="COMBOBOX" description="" width="30" screenProtection="immer geschützt" alias="true" meaning="Datenbankbezeichnung der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objdnr"/>
+    <entries englishName="objectInTable" name="objinzeile" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="immer geschützt" skip="true" meaning="Gehört das Objekt zur Tabelle?" changePriority="A" viewPriority="A" primaryName="objinzeile"/>
+    <entries englishName="rowNo" name="zn" type="I5" guiType="INTEGER" description="" width="5" screenProtection="immer geschützt" skip="true" meaning="Laufende Zeilennummer" changePriority="A" viewPriority="A" primaryName="zn"/>
+    <entries englishName="rowCount" name="ozeilen" type="I5" guiType="INTEGER" description="" width="5" screenProtection="immer geschützt" meaning="Anzahl Zeilen im Tabellenteil" changePriority="A" viewPriority="A" primaryName="ozeilen"/>
+    <entries englishName="archiveFile" name="dateiarchivieren" type="DV0" guiType="FILEREFERENCE" description="" width="255" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Zu archivierendes Dokument" changePriority="A" viewPriority="A" primaryName="dateiarchivieren"/>
+    <entries englishName="print" name="budruck" type="BU14" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck"/>
+    <entries englishName="print2" name="budruck2" type="BU8" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck2"/>
+    <entries englishName="runIS" name="buinfosys" type="BU14" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Infosystem" changePriority="A" viewPriority="A" primaryName="buinfosys"/>
+    <entries englishName="callAction" name="buaktion" type="BU14" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Aktion auslösen" changePriority="A" viewPriority="A" primaryName="buaktion"/>
+    <entries englishName="version" name="versionn" type="ZAE1" guiType="INPUT" description="" width="22" screenProtection="immer geschützt" meaning="Versionsnummer" changePriority="A" viewPriority="A" primaryName="versionn"/>
+    <entries englishName="dontCreateVersion" name="versionierenicht" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="änderbar" writeable="true" meaning="Satz nicht versionieren?" changePriority="A" viewPriority="A" primaryName="versionierenicht"/>
+    <entries englishName="versionedRecord" name="versioniertersatz" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="immer geschützt" skip="true" meaning="Handelt es sich um eine gespeicherte Version?" changePriority="A" viewPriority="A" primaryName="versioniertersatz"/>
+    <entries englishName="createVersion" name="versionerstellen" type="A274" guiType="COMBOBOX" description="" width="22" screenProtection="änderbar" writeable="true" skip="true" meaning="Soll beim nächsten Speichern eine Version erstellt werden?" changePriority="A" viewPriority="A" primaryName="versionerstellen"/>
+    <entries englishName="relevantVersion" name="versionrelevant" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="immer geschützt" skip="true" meaning="Hat sich in diesem Satz ein konfigurierter Versionierungsauslöser geändert?" changePriority="A" viewPriority="A" primaryName="versionrelevant"/>
+    <entries englishName="marked" name="markiert" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="änderbar" writeable="true" skip="true" meaning="Zeile markiert?" changePriority="A" viewPriority="A" primaryName="markiert"/>
+    <entries englishName="marker" name="markierung" type="I5" guiType="INTEGER" description="" width="5" screenProtection="änderbar" writeable="true" skip="true" meaning="Markierungsordnung" changePriority="A" viewPriority="A" primaryName="markierung"/>
+    <entries englishName="markedRow" name="markiertzn" type="I5" guiType="INTEGER" description="" width="5" screenProtection="änderbar" writeable="true" skip="true" meaning="Markierte Zeile" changePriority="A" viewPriority="A" primaryName="markiertzn"/>
+    <entries englishName="recordFilingVersion" name="ablagen" type="ZAE1" guiType="INPUT" description="" width="22" screenProtection="immer geschützt" meaning="Zeitstempel der Datensatzablage" changePriority="A" viewPriority="A" primaryName="ablagen"/>
+    <entries englishName="recordFiled" name="ablagef" type="ZAE0" guiType="CHECKBOX" description="" width="1" screenProtection="immer geschützt" alias="true" meaning="Datensatz abgelegt?" changePriority="A" viewPriority="A" primaryName="ablagen"/>
+    <entries englishName="type" name="typ" type="K2" guiType="INTEGER" description="" width="2" screenProtection="kerngesteuert" writeable="true" meaning="Datensatztyp" changePriority="A" viewPriority="A" primaryName="typ"/>
+    <entries englishName="" name="num86" type="N86" guiType="INPUT" description="" width="15" screenProtection="kerngesteuert" writeable="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="idno" name="nummer" type="NK86" guiType="INPUT" description="" width="15" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="idnoPadded" name="nummerb" type="NL86" guiType="INPUT" description="" width="15" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="" name="such86" type="SW86" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="swd" name="such" type="SWK86" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="swdPadded" name="suchb" type="SWL86" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="descr" name="name" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Bezeichnung" changePriority="A" viewPriority="A" primaryName="name"/>
+    <entries englishName="descr1" name="name1" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Text in Deutsch" changePriority="A" viewPriority="A" primaryName="name"/>
+    <entries englishName="descr2" name="name2" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Englisch" changePriority="A" viewPriority="A" primaryName="name2"/>
+    <entries englishName="descr3" name="name3" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Französisch" changePriority="A" viewPriority="A" primaryName="name3"/>
+    <entries englishName="descr4" name="name4" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Spanisch" changePriority="A" viewPriority="A" primaryName="name4"/>
+    <entries englishName="descr5" name="name5" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Italienisch" changePriority="A" viewPriority="A" primaryName="name5"/>
+    <entries englishName="descr6" name="name6" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Polnisch" changePriority="A" viewPriority="A" primaryName="name6"/>
+    <entries englishName="descr7" name="name7" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Russisch" changePriority="A" viewPriority="A" primaryName="name7"/>
+    <entries englishName="descr8" name="name8" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Ungarisch" changePriority="A" viewPriority="A" primaryName="name8"/>
+    <entries englishName="descr9" name="name9" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Tschechisch" changePriority="A" viewPriority="A" primaryName="name9"/>
+    <entries englishName="descr10" name="name10" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Türkisch" changePriority="A" viewPriority="A" primaryName="name10"/>
+    <entries englishName="descr11" name="name11" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 1" changePriority="A" viewPriority="A" primaryName="name11"/>
+    <entries englishName="descr12" name="name12" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 2" changePriority="A" viewPriority="A" primaryName="name12"/>
+    <entries englishName="descr13" name="name13" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 3" changePriority="A" viewPriority="A" primaryName="name13"/>
+    <entries englishName="descr14" name="name14" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in amerikanischem Englisch" changePriority="A" viewPriority="A" primaryName="name14"/>
+    <entries englishName="descr15" name="name15" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Rumänisch" changePriority="A" viewPriority="A" primaryName="name15"/>
+    <entries englishName="descr16" name="name16" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Indonesisch" changePriority="A" viewPriority="A" primaryName="name16"/>
+    <entries englishName="descr17" name="name17" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Niederländisch" changePriority="A" viewPriority="A" primaryName="name17"/>
+    <entries englishName="descr18" name="name18" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Mazedonisch" changePriority="A" viewPriority="A" primaryName="name18"/>
+    <entries englishName="descr19" name="name19" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Bulgarisch" changePriority="A" viewPriority="A" primaryName="name19"/>
+    <entries englishName="descr20" name="name20" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Serbisch" changePriority="A" viewPriority="A" primaryName="name20"/>
+    <entries englishName="descr21" name="name21" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowenisch" changePriority="A" viewPriority="A" primaryName="name21"/>
+    <entries englishName="descr22" name="name22" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowakisch" changePriority="A" viewPriority="A" primaryName="name22"/>
+    <entries englishName="descr23" name="name23" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Portugiesisch" changePriority="A" viewPriority="A" primaryName="name23"/>
+    <entries englishName="descr24" name="name24" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in vereinfachtem Chinesisch" changePriority="A" viewPriority="A" primaryName="name24"/>
+    <entries englishName="descr25" name="name25" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in traditionellem Chinesisch" changePriority="A" viewPriority="A" primaryName="name25"/>
+    <entries englishName="descr26" name="name26" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Griechisch" changePriority="A" viewPriority="A" primaryName="name26"/>
+    <entries englishName="descr27" name="name27" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Thailändisch" changePriority="A" viewPriority="A" primaryName="name27"/>
+    <entries englishName="descr28" name="name28" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Arabisch" changePriority="A" viewPriority="A" primaryName="name28"/>
+    <entries englishName="descr29" name="name29" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Persisch" changePriority="A" viewPriority="A" primaryName="name29"/>
+    <entries englishName="descr30" name="name30" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Vietnamesisch" changePriority="A" viewPriority="A" primaryName="name30"/>
+    <entries englishName="descr31" name="name31" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Urdu" changePriority="A" viewPriority="A" primaryName="name31"/>
+    <entries englishName="descr32" name="name32" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Japanisch" changePriority="A" viewPriority="A" primaryName="name32"/>
+    <entries englishName="descrOperLang" name="namebspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Bezeichnung in Bediensprache" changePriority="A" viewPriority="A" primaryName="namebspr"/>
+    <entries englishName="searchExt" name="sucherw" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" alias="true" meaning="Sucherweiterung" changePriority="A" viewPriority="A" primaryName="namebspr"/>
+    <entries englishName="descrCorrLang" name="namekspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Bezeichnung in Korrespondenzsprache" changePriority="A" viewPriority="A" primaryName="namekspr"/>
+    <entries englishName="descrOutLang" name="nameaspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Bezeichnung in Ausgabesprache" changePriority="A" viewPriority="A" primaryName="nameaspr"/>
+    <entries englishName="translateText" name="nameueb" type="BU7" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Text übersetzen" changePriority="A" viewPriority="A" primaryName="nameueb"/>
+    <entries englishName="modificationDate" name="stand" type="GD19" guiType="DATE" description="" width="19" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Änderungsdatum" changePriority="A" viewPriority="A" primaryName="stand"/>
+    <entries englishName="creationDate" name="erfass" type="GD19" guiType="DATE" description="" width="19" screenProtection="nur neu änderbar" writeable="true" meaning="Erfassungsdatum" changePriority="A" viewPriority="A" primaryName="erfass"/>
+    <entries englishName="responsOperator" name="zeich" type="GL15" guiType="INPUT" description="" width="15" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+    <entries englishName="lastProcessor" name="zeichen" type="GL15" guiType="INPUT" description="" width="15" screenProtection="Multisiteimport änderbar" writeable="true" alias="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+    <entries englishName="userDefinedVersion" name="index" type="GLU2" guiType="INPUT" description="" width="2" screenProtection="änderbar" writeable="true" meaning="Versionskennung" changePriority="A" viewPriority="A" primaryName="index"/>
+    <entries englishName="sourceClient" name="urmand" type="GLA15" guiType="INPUT" description="" width="15" screenProtection="immer geschützt" meaning="Ursprungsmandant des Datensatzes" changePriority="A" viewPriority="A" primaryName="urmand"/>
+    <entries englishName="recordClient" name="mandkenn" type="GLA15" guiType="INPUT" description="" width="15" screenProtection="immer geschützt" skip="true" meaning="Mandantenkennung des Datensatzes" changePriority="A" viewPriority="A" primaryName="mandkenn"/>
+    <entries englishName="GUID" name="guid" type="GLA38" guiType="INPUT" description="" width="38" screenProtection="nur neu änderbar" writeable="true" meaning="GUID des Datensatzes" changePriority="A" viewPriority="A" primaryName="guid"/>
+    <entries englishName="className" name="classname" type="GLC40" guiType="INPUT" description="" width="40" screenProtection="änderbar" writeable="true" meaning="Java-Klassenname" changePriority="A" viewPriority="A" primaryName="classname"/>
+    <entries englishName="package" name="paket" type="P87:10" guiType="REFERENCE" description="" width="9" screenProtection="standardgesteuert" writeable="true" meaning="Paketzugehörigkeit" changePriority="A" viewPriority="A" primaryName="paket"/>
+    <entries englishName="freeText" name="ftext" type="TN" guiType="FREETEXT" description="" width="80" screenProtection="kerngesteuert" writeable="true" meaning="Freitext 1" changePriority="A" viewPriority="A" primaryName="ftext"/>
+    <entries englishName="freeText2" name="ftext2" type="TN" guiType="FREETEXT" description="" width="80" screenProtection="kerngesteuert" writeable="true" meaning="Freitext 2" changePriority="A" viewPriority="A" primaryName="ftext2"/>
+    <entries englishName="keyWord" name="schlag" type="NT30" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" meaning="Schlagwort" changePriority="A" viewPriority="A" primaryName="schlag"/>
+    <entries englishName="" name="ausloeser" type="VPK98" guiType="REFERENCE" description="" width="38" screenProtection="kerngesteuert" writeable="true" meaning="deprecated" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+    <entries englishName="" name="ausloesererw" type="VPT98" guiType="REFERENCE" description="" width="254" screenProtection="immer geschützt" alias="true" meaning="deprecated" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+    <entries englishName="triggerOfEnt" name="ursache" type="VPK98" guiType="REFERENCE" description="" width="38" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Verweis auf das diesem Vorgang als Verursacher zugeordnete Objekt" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+    <entries englishName="triggerOfEntExt" name="ursacheerw" type="VPT98" guiType="REFERENCE" description="" width="254" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Ursache" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+    <entries englishName="editor" name="bearbeit" type="P11:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiter, der diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="bearbeit"/>
+    <entries englishName="editorExt" name="bearbeiterw" type="PT11:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung des Mitarbeiters, der diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="bearbeit"/>
+    <entries englishName="employeeRole" name="mitarbrolle" type="P117:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiterrolle, die diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="mitarbrolle"/>
+    <entries englishName="employeeRoleDescr" name="mitarbrollename" type="PT117:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Mitarbeiterrolle, die diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="mitarbrolle"/>
+    <entries englishName="team" name="team" type="P117:2" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Team, das diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="team"/>
+    <entries englishName="teamDescr" name="teamname" type="PT117:2" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Team, das diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="team"/>
+    <entries englishName="confirm" name="bestaet" type="P11:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiter, der diesen Vorgang bestätigt" changePriority="A" viewPriority="A" primaryName="bestaet"/>
+    <entries englishName="confirmExt" name="bestaeterw" type="PT11:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung des Mitarbeiters, der diesen Vorgang bestätigt" changePriority="A" viewPriority="A" primaryName="bestaet"/>
+    <entries englishName="employeePwdRef" name="passmitarb" type="P11:1" guiType="REFERENCE" description="" width="9" screenProtection="immer geschützt" skip="true" meaning="Verweis auf den Mitarbeitersatz des aktuellen Passworts" changePriority="A" viewPriority="A" primaryName="passmitarb"/>
+    <entries englishName="startDateProcess" name="start" type="GD2" guiType="DATE" description="" width="8" screenProtection="kerngesteuert" writeable="true" meaning="Startdatum" changePriority="A" viewPriority="A" primaryName="start"/>
+    <entries englishName="endDate" name="end" type="GD2" guiType="DATE" description="" width="8" screenProtection="kerngesteuert" writeable="true" meaning="Datum, an dem der Vorgang abschließt" changePriority="A" viewPriority="A" primaryName="end"/>
+    <entries englishName="startDatePlan" name="planstart" type="GD2" guiType="DATE" description="" width="8" screenProtection="immer geschützt" meaning="Geplantes Startdatum (entspricht dem ersten gespeicherten Startdatum)" changePriority="A" viewPriority="A" primaryName="planstart"/>
+    <entries englishName="status" name="status" type="A101" guiType="COMBOBOX" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Status" changePriority="A" viewPriority="A" primaryName="status"/>
+    <entries englishName="intProcess" name="intern" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="kerngesteuert" writeable="true" meaning="Interner Vorgang?" changePriority="A" viewPriority="A" primaryName="intern"/>
+    <entries englishName="loadLogTab" name="butablad" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Button zum Laden der Protokolle dieses Vorgangs in die Tabelle" changePriority="A" viewPriority="A" primaryName="butablad"/>
+    <entries englishName="loadSelLogTab" name="butabselld" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Button zum selektiven Laden der Protokolle dieses Vorgangs in die Tabelle" changePriority="A" viewPriority="A" primaryName="butabselld"/>
+    <entries englishName="seriesCode" name="seriennr" type="NT15" guiType="INPUT" description="" width="15" screenProtection="kerngesteuert" writeable="true" meaning="Serienkennung" changePriority="A" viewPriority="A" primaryName="seriennr"/>
+    <entries englishName="project" name="projekt" type="PS86:1" guiType="REFERENCE" description="" width="31" screenProtection="kerngesteuert" writeable="true" meaning="Projekt" changePriority="A" viewPriority="A" primaryName="projekt"/>
+    <entries englishName="markSeriesProcessForDel" name="tmark" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Markierung zum Löschen des Vorgangs aus der Serie" changePriority="A" viewPriority="A" primaryName="tmark"/>
+    <entries englishName="viewProcessSeries" name="buserie" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Button zur Ansicht der Serie zu diesem Vorgang" changePriority="A" viewPriority="A" primaryName="buserie"/>
+    <entries englishName="" name="ablaufbeschr" type="P133:1" guiType="REFERENCE" description="" width="10" screenProtection="kerngesteuert" writeable="true" meaning="deprecated" changePriority="A" viewPriority="A" primaryName="ablaufbeschr"/>
+    <entries englishName="sequence" name="ablauf" type="P133:1" guiType="REFERENCE" description="" width="10" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Ablaufbeschreibung" changePriority="A" viewPriority="A" primaryName="ablaufbeschr"/>
+    <entries englishName="sequenceDescr" name="ablaufbez" type="PT133:1" guiType="REFERENCE" description="" width="45" screenProtection="immer geschützt" alias="true" meaning="Bezeichnung der Ablaufbeschreibung" changePriority="A" viewPriority="A" primaryName="ablaufbeschr"/>
+    <entries englishName="sequenceStatus" name="ablaufzust" type="P133:2" guiType="REFERENCE" description="" width="10" screenProtection="kerngesteuert" writeable="true" meaning="Ablaufzustand" changePriority="A" viewPriority="A" primaryName="ablaufzust"/>
+    <entries englishName="sequenceStatusDescr" name="ablaufzustbez" type="PT133:2" guiType="REFERENCE" description="" width="45" screenProtection="immer geschützt" alias="true" meaning="Bezeichnung des Ablaufzustands" changePriority="A" viewPriority="A" primaryName="ablaufzust"/>
+    <entries englishName="selSequenceDescr" name="auswablauf" type="BU3" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Button zur Auswahl eines Ablaufschritts" changePriority="A" viewPriority="A" primaryName="auswablauf"/>
+    <entries englishName="prio" name="prio" type="AZL20060" guiType="COMBOBOX" description="" width="50" screenProtection="kerngesteuert" writeable="true" meaning="Priorität" changePriority="A" viewPriority="A" primaryName="prio"/>
+    <entries englishName="purchSalesTrans" name="evvorgang" type="VPK10" guiType="REFERENCE" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Vorgang Einkauf/Verkauf" changePriority="A" viewPriority="A" primaryName="evvorgang"/>
+    <entries englishName="purchSalesTransExt" name="evvorgangerw" type="VPT10" guiType="REFERENCE" description="" width="64" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Vorgang Einkauf/Verkauf" changePriority="A" viewPriority="A" primaryName="evvorgang"/>
+    <entries englishName="productListElem" name="elem" type="VPK1" guiType="REFERENCE" description="" width="18" screenProtection="kerngesteuert" writeable="true" meaning="Fertigungslistenelement" changePriority="A" viewPriority="A" primaryName="elem"/>
+    <entries englishName="productListElementExt" name="elemerw" type="VPT1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Fertigungslistenelement" changePriority="A" viewPriority="A" primaryName="elem"/>
+    <entries englishName="businessPartner" name="partner" type="VPK5" guiType="REFERENCE" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Geschäftspartner" changePriority="A" viewPriority="A" primaryName="partner"/>
+    <entries englishName="businessPartnerExt" name="partnererw" type="VPT5" guiType="REFERENCE" description="" width="62" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Geschäftspartner" changePriority="A" viewPriority="A" primaryName="partner"/>
+    <entries englishName="descrTextModule" name="beschr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Beschreibung" changePriority="A" viewPriority="A" primaryName="beschr"/>
+    <entries englishName="descrTextModule1" name="beschr1" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Text in Deutsch" changePriority="A" viewPriority="A" primaryName="beschr"/>
+    <entries englishName="descrTextModule2" name="beschr2" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Englisch" changePriority="A" viewPriority="A" primaryName="beschr2"/>
+    <entries englishName="descrTextModule3" name="beschr3" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Französisch" changePriority="A" viewPriority="A" primaryName="beschr3"/>
+    <entries englishName="descrTextModule4" name="beschr4" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Spanisch" changePriority="A" viewPriority="A" primaryName="beschr4"/>
+    <entries englishName="descrTextModule5" name="beschr5" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Italienisch" changePriority="A" viewPriority="A" primaryName="beschr5"/>
+    <entries englishName="descrTextModule6" name="beschr6" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Polnisch" changePriority="A" viewPriority="A" primaryName="beschr6"/>
+    <entries englishName="descrTextModule7" name="beschr7" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Russisch" changePriority="A" viewPriority="A" primaryName="beschr7"/>
+    <entries englishName="descrTextModule8" name="beschr8" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Ungarisch" changePriority="A" viewPriority="A" primaryName="beschr8"/>
+    <entries englishName="descrTextModule9" name="beschr9" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Tschechisch" changePriority="A" viewPriority="A" primaryName="beschr9"/>
+    <entries englishName="descrTextModule10" name="beschr10" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Türkisch" changePriority="A" viewPriority="A" primaryName="beschr10"/>
+    <entries englishName="descrTextModule11" name="beschr11" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 1" changePriority="A" viewPriority="A" primaryName="beschr11"/>
+    <entries englishName="descrTextModule12" name="beschr12" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 2" changePriority="A" viewPriority="A" primaryName="beschr12"/>
+    <entries englishName="descrTextModule13" name="beschr13" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 3" changePriority="A" viewPriority="A" primaryName="beschr13"/>
+    <entries englishName="descrTextModule14" name="beschr14" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in amerikanischem Englisch" changePriority="A" viewPriority="A" primaryName="beschr14"/>
+    <entries englishName="descrTextModule15" name="beschr15" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Rumänisch" changePriority="A" viewPriority="A" primaryName="beschr15"/>
+    <entries englishName="descrTextModule16" name="beschr16" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Indonesisch" changePriority="A" viewPriority="A" primaryName="beschr16"/>
+    <entries englishName="descrTextModule17" name="beschr17" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Niederländisch" changePriority="A" viewPriority="A" primaryName="beschr17"/>
+    <entries englishName="descrTextModule18" name="beschr18" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Mazedonisch" changePriority="A" viewPriority="A" primaryName="beschr18"/>
+    <entries englishName="descrTextModule19" name="beschr19" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Bulgarisch" changePriority="A" viewPriority="A" primaryName="beschr19"/>
+    <entries englishName="descrTextModule20" name="beschr20" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Serbisch" changePriority="A" viewPriority="A" primaryName="beschr20"/>
+    <entries englishName="descrTextModule21" name="beschr21" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowenisch" changePriority="A" viewPriority="A" primaryName="beschr21"/>
+    <entries englishName="descrTextModule22" name="beschr22" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowakisch" changePriority="A" viewPriority="A" primaryName="beschr22"/>
+    <entries englishName="descrTextModule23" name="beschr23" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Portugiesisch" changePriority="A" viewPriority="A" primaryName="beschr23"/>
+    <entries englishName="descrTextModule24" name="beschr24" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in vereinfachtem Chinesisch" changePriority="A" viewPriority="A" primaryName="beschr24"/>
+    <entries englishName="descrTextModule25" name="beschr25" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in traditionellem Chinesisch" changePriority="A" viewPriority="A" primaryName="beschr25"/>
+    <entries englishName="descrTextModule26" name="beschr26" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Griechisch" changePriority="A" viewPriority="A" primaryName="beschr26"/>
+    <entries englishName="descrTextModule27" name="beschr27" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Thailändisch" changePriority="A" viewPriority="A" primaryName="beschr27"/>
+    <entries englishName="descrTextModule28" name="beschr28" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Arabisch" changePriority="A" viewPriority="A" primaryName="beschr28"/>
+    <entries englishName="descrTextModule29" name="beschr29" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Persisch" changePriority="A" viewPriority="A" primaryName="beschr29"/>
+    <entries englishName="descrTextModule30" name="beschr30" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Vietnamesisch" changePriority="A" viewPriority="A" primaryName="beschr30"/>
+    <entries englishName="descrTextModule31" name="beschr31" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Urdu" changePriority="A" viewPriority="A" primaryName="beschr31"/>
+    <entries englishName="descrTextModule32" name="beschr32" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Japanisch" changePriority="A" viewPriority="A" primaryName="beschr32"/>
+    <entries englishName="descrTextModuleOperLang" name="beschrbspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Beschreibung in Bediensprache" changePriority="A" viewPriority="A" primaryName="beschrbspr"/>
+    <entries englishName="descrTextModuleCorrLang" name="beschrkspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Beschreibung in Korrespondenzsprache" changePriority="A" viewPriority="A" primaryName="beschrkspr"/>
+    <entries englishName="descrTextModuleOutLang" name="beschraspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Beschreibung in Ausgabesprache" changePriority="A" viewPriority="A" primaryName="beschraspr"/>
+    <entries englishName="translateDescrTextModule" name="beschrueb" type="BU7" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Text übersetzen" changePriority="A" viewPriority="A" primaryName="beschrueb"/>
+    <entries englishName="documents" name="dokumente" type="P70:1.2.4" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Angehängte Dokumente" changePriority="A" viewPriority="A" primaryName="dokumente"/>
+    <entries englishName="startingTime" name="startzeit" type="Z" guiType="DATE" description="" width="5" screenProtection="kerngesteuert" writeable="true" meaning="Startzeit" changePriority="A" viewPriority="A" primaryName="startzeit"/>
+    <entries englishName="endTime" name="endzeit" type="Z" guiType="DATE" description="" width="5" screenProtection="kerngesteuert" writeable="true" meaning="Endezeit" changePriority="A" viewPriority="A" primaryName="endzeit"/>
+    <entries englishName="yzufplan" name="yzufplan" type="P41:0" guiType="REFERENCE" description="" width="16" screenProtection="änderbar" writeable="true" custom="true" meaning="zu Fakturaplan" changePriority="A" viewPriority="A" primaryName="yzufplan"/>
+    <entries englishName="yexchgexport" name="yexchgexport" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" custom="true" meaning="exportieren" changePriority="A" viewPriority="A" primaryName="yexchgexport"/>
+    <entries englishName="" name="grust" type="I9" guiType="INTEGER" description="" tableEntry="true" width="9" screenProtection="immer geschützt" meaning="Gruppe" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="grpNo" name="gruppe" type="GRN86" guiType="INTEGER" description="" tableEntry="true" width="2" screenProtection="immer geschützt" alias="true" meaning="Gruppennummer" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="grpDescr" name="grbez" type="GRB86" guiType="INPUT" description="" tableEntry="true" width="80" screenProtection="immer geschützt" alias="true" meaning="Gruppenbezeichnung" changePriority="A" viewPriority="A" primaryName="grust"/>
+    <entries englishName="recordNo" name="sn" type="P86" guiType="REFERENCE" description="" tableEntry="true" width="16" screenProtection="immer geschützt" meaning="Satznummer" changePriority="A" viewPriority="A" primaryName="sn"/>
+    <entries englishName="id" name="id" type="ID86" guiType="REFERENCE" description="" tableEntry="true" width="30" screenProtection="immer geschützt" alias="true" meaning="Datensatz-ID" changePriority="A" viewPriority="A" primaryName="sn"/>
+    <entries englishName="DBNo" name="dnr" type="AN177" guiType="COMBOBOX" description="" tableEntry="true" width="3" screenProtection="immer geschützt" meaning="Datenbanknummer" changePriority="A" viewPriority="A" primaryName="dnr"/>
+    <entries englishName="DBDescr" name="dbez" type="A177" guiType="COMBOBOX" description="" tableEntry="true" width="30" screenProtection="immer geschützt" alias="true" meaning="Datenbankbezeichnung" changePriority="A" viewPriority="A" primaryName="dnr"/>
+    <entries englishName="schemaVersion" name="schemaversion" type="ZAE1" guiType="INPUT" description="" tableEntry="true" width="22" screenProtection="immer geschützt" meaning="Schemaversion" changePriority="A" viewPriority="A" primaryName="schemaversion"/>
+    <entries englishName="objectGrpNo" name="objgruppe" type="GRN86" guiType="INTEGER" description="" tableEntry="true" width="2" screenProtection="immer geschützt" meaning="Gruppennummer der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objgruppe"/>
+    <entries englishName="objectGrpDescr" name="objgrbez" type="GRB86" guiType="INPUT" description="" tableEntry="true" width="80" screenProtection="immer geschützt" alias="true" meaning="Gruppenbezeichnung der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objgruppe"/>
+    <entries englishName="objectDBNo" name="objdnr" type="AN177" guiType="COMBOBOX" description="" tableEntry="true" width="3" screenProtection="immer geschützt" meaning="Datenbanknummer der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objdnr"/>
+    <entries englishName="objectDBDescr" name="objdbez" type="A177" guiType="COMBOBOX" description="" tableEntry="true" width="30" screenProtection="immer geschützt" alias="true" meaning="Datenbankbezeichnung der Objektgruppe" changePriority="A" viewPriority="A" primaryName="objdnr"/>
+    <entries englishName="objectInTable" name="objinzeile" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Gehört das Objekt zur Tabelle?" changePriority="A" viewPriority="A" primaryName="objinzeile"/>
+    <entries englishName="rowNo" name="zn" type="I5" guiType="INTEGER" description="" tableEntry="true" width="5" screenProtection="immer geschützt" skip="true" meaning="Laufende Zeilennummer" changePriority="A" viewPriority="A" primaryName="zn"/>
+    <entries englishName="rowCount" name="ozeilen" type="I5" guiType="INTEGER" description="" tableEntry="true" width="5" screenProtection="immer geschützt" meaning="Anzahl Zeilen im Tabellenteil" changePriority="A" viewPriority="A" primaryName="ozeilen"/>
+    <entries englishName="archiveFile" name="dateiarchivieren" type="DV0" guiType="FILEREFERENCE" description="" tableEntry="true" width="255" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Zu archivierendes Dokument" changePriority="A" viewPriority="A" primaryName="dateiarchivieren"/>
+    <entries englishName="print" name="budruck" type="BU14" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck"/>
+    <entries englishName="print2" name="budruck2" type="BU8" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Drucken" changePriority="A" viewPriority="A" primaryName="budruck2"/>
+    <entries englishName="runIS" name="buinfosys" type="BU14" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Infosystem" changePriority="A" viewPriority="A" primaryName="buinfosys"/>
+    <entries englishName="callAction" name="buaktion" type="BU14" description="" tableEntry="true" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Aktion auslösen" changePriority="A" viewPriority="A" primaryName="buaktion"/>
+    <entries englishName="version" name="versionn" type="ZAE1" guiType="INPUT" description="" tableEntry="true" width="22" screenProtection="immer geschützt" meaning="Versionsnummer" changePriority="A" viewPriority="A" primaryName="versionn"/>
+    <entries englishName="dontCreateVersion" name="versionierenicht" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="änderbar" writeable="true" meaning="Satz nicht versionieren?" changePriority="A" viewPriority="A" primaryName="versionierenicht"/>
+    <entries englishName="versionedRecord" name="versioniertersatz" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Handelt es sich um eine gespeicherte Version?" changePriority="A" viewPriority="A" primaryName="versioniertersatz"/>
+    <entries englishName="createVersion" name="versionerstellen" type="A274" guiType="COMBOBOX" description="" tableEntry="true" width="22" screenProtection="änderbar" writeable="true" skip="true" meaning="Soll beim nächsten Speichern eine Version erstellt werden?" changePriority="A" viewPriority="A" primaryName="versionerstellen"/>
+    <entries englishName="relevantVersion" name="versionrelevant" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Hat sich in diesem Satz ein konfigurierter Versionierungsauslöser geändert?" changePriority="A" viewPriority="A" primaryName="versionrelevant"/>
+    <entries englishName="marked" name="markiert" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="änderbar" writeable="true" skip="true" meaning="Zeile markiert?" changePriority="A" viewPriority="A" primaryName="markiert"/>
+    <entries englishName="marker" name="markierung" type="I5" guiType="INTEGER" description="" tableEntry="true" width="5" screenProtection="änderbar" writeable="true" skip="true" meaning="Markierungsordnung" changePriority="A" viewPriority="A" primaryName="markierung"/>
+    <entries englishName="markedRow" name="markiertzn" type="I5" guiType="INTEGER" description="" tableEntry="true" width="5" screenProtection="änderbar" writeable="true" skip="true" meaning="Markierte Zeile" changePriority="A" viewPriority="A" primaryName="markiertzn"/>
+    <entries englishName="recordFilingVersion" name="ablagen" type="ZAE1" guiType="INPUT" description="" tableEntry="true" width="22" screenProtection="immer geschützt" meaning="Zeitstempel der Datensatzablage" changePriority="A" viewPriority="A" primaryName="ablagen"/>
+    <entries englishName="recordFiled" name="ablagef" type="ZAE0" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" alias="true" meaning="Datensatz abgelegt?" changePriority="A" viewPriority="A" primaryName="ablagen"/>
+    <entries englishName="type" name="typ" type="K2" guiType="INTEGER" description="" tableEntry="true" width="2" screenProtection="immer geschützt" meaning="Datensatztyp" changePriority="A" viewPriority="A" primaryName="typ"/>
+    <entries englishName="" name="num86" type="N86" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="immer geschützt" skip="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="idno" name="nummer" type="NK86" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="immer geschützt" skip="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="idnoPadded" name="nummerb" type="NL86" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="immer geschützt" skip="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+    <entries englishName="" name="such86" type="SW86" guiType="INPUT" description="" tableEntry="true" width="30" screenProtection="immer geschützt" skip="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="swd" name="such" type="SWK86" guiType="INPUT" description="" tableEntry="true" width="30" screenProtection="immer geschützt" skip="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="swdPadded" name="suchb" type="SWL86" guiType="INPUT" description="" tableEntry="true" width="30" screenProtection="immer geschützt" skip="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+    <entries englishName="descr" name="name" type="T64" guiType="TEXTAREA" description="" tableEntry="true" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Bezeichnung" changePriority="A" viewPriority="A" primaryName="name"/>
+    <entries englishName="searchExt" name="sucherw" type="T64" guiType="TEXTAREA" description="" tableEntry="true" width="64" screenProtection="immer geschützt" skip="true" meaning="Sucherweiterung" changePriority="A" viewPriority="A" primaryName="sucherw"/>
+    <entries englishName="modificationDate" name="stand" type="GD19" guiType="DATE" description="" tableEntry="true" width="19" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Änderungsdatum" changePriority="A" viewPriority="A" primaryName="stand"/>
+    <entries englishName="creationDate" name="erfass" type="GD19" guiType="DATE" description="" tableEntry="true" width="19" screenProtection="nur neu änderbar" writeable="true" meaning="Erfassungsdatum" changePriority="A" viewPriority="A" primaryName="erfass"/>
+    <entries englishName="responsOperator" name="zeich" type="GL15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+    <entries englishName="lastProcessor" name="zeichen" type="GL15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="Multisiteimport änderbar" writeable="true" alias="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+    <entries englishName="userDefinedVersion" name="index" type="GLU2" guiType="INPUT" description="" tableEntry="true" width="2" screenProtection="änderbar" writeable="true" meaning="Versionskennung" changePriority="A" viewPriority="A" primaryName="index"/>
+    <entries englishName="sourceClient" name="urmand" type="GLA15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="immer geschützt" meaning="Ursprungsmandant des Datensatzes" changePriority="A" viewPriority="A" primaryName="urmand"/>
+    <entries englishName="recordClient" name="mandkenn" type="GLA15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="immer geschützt" skip="true" meaning="Mandantenkennung des Datensatzes" changePriority="A" viewPriority="A" primaryName="mandkenn"/>
+    <entries englishName="GUID" name="guid" type="GLA38" guiType="INPUT" description="" tableEntry="true" width="38" screenProtection="nur neu änderbar" writeable="true" meaning="GUID des Datensatzes" changePriority="A" viewPriority="A" primaryName="guid"/>
+    <entries englishName="className" name="classname" type="GLC40" guiType="INPUT" description="" tableEntry="true" width="40" screenProtection="änderbar" writeable="true" meaning="Java-Klassenname" changePriority="A" viewPriority="A" primaryName="classname"/>
+    <entries englishName="package" name="paket" type="P87:10" guiType="REFERENCE" description="" tableEntry="true" width="9" screenProtection="standardgesteuert" writeable="true" meaning="Paketzugehörigkeit" changePriority="A" viewPriority="A" primaryName="paket"/>
+    <entries englishName="trans" name="vorgang" type="PS86:1.2" guiType="REFERENCE" description="" tableEntry="true" width="31" screenProtection="immer geschützt" meaning="Verweis auf den Vorgang, zu dem dieses Protokoll gehört" changePriority="A" viewPriority="A" primaryName="vorgang"/>
+    <entries englishName="logDate" name="pdatum" type="GD2" guiType="DATE" description="" tableEntry="true" width="8" screenProtection="immer geschützt" meaning="Protokolldatum" changePriority="A" viewPriority="A" primaryName="pdatum"/>
+    <entries englishName="logTime" name="puhrzeit" type="Z" guiType="DATE" description="" tableEntry="true" width="5" screenProtection="immer geschützt" meaning="Protokollzeit" changePriority="A" viewPriority="A" primaryName="puhrzeit"/>
+    <entries englishName="suggStatus" name="pstatus" type="A101" guiType="COMBOBOX" description="" tableEntry="true" width="11" screenProtection="immer geschützt" meaning="Status bei Protokollierung" changePriority="A" viewPriority="A" primaryName="pstatus"/>
+    <entries englishName="attachObj" name="anhobj" type="VPK98" guiType="REFERENCE" description="" tableEntry="true" width="38" screenProtection="kerngesteuert" writeable="true" meaning="Angehängtes Objekt" changePriority="A" viewPriority="A" primaryName="anhobj"/>
+    <entries englishName="reloadWithLock" name="dolock" type="BU4" description="" tableEntry="true" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Zeile mit Sperre wiederladen" changePriority="A" viewPriority="A" primaryName="dolock"/>
+    <entries englishName="recLocked" name="lock" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Protokollzeile darf geändert werden" changePriority="A" viewPriority="A" primaryName="lock"/>
+    <entries englishName="logSequenceStatus" name="protablaufzust" type="GL45" guiType="INPUT" description="" tableEntry="true" width="45" screenProtection="immer geschützt" meaning="Ablaufzustand bei Protokollierung" changePriority="A" viewPriority="A" primaryName="protablaufzust"/>
+  </variables>
+  <popups>
+    <popup id="menuTable"/>
+    <popup id="menuExecute">
+      <menuItems>
+        <label viewLanguage="de" key="f00d49bf87d0820a82318d23434edc49">
+          <value key="de" value="Tabelle laden"/>
+        </label>
+        <variable englishName="loadLogTab" name="butablad" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Button zum Laden der Protokolle dieses Vorgangs in die Tabelle" changePriority="A" viewPriority="A" primaryName="butablad"/>
+      </menuItems>
+    </popup>
+  </popups>
+  <language code="68" text="Deutsch" iso="de"/>
+  <id xsi:type="screen:DatabaseId" name="Aufgabe/Vorgang" priority="A" groupName="Aufgabe" group="6" number="86" numberName="Vorgang" screenNumber="742"/>
+  <frames standardHelp="10.1.3.2">
+    <elements xsi:type="core:GridLayout">
+      <cells alignmentY="center">
+        <elements xsi:type="core:Label">
+          <label viewLanguage="de" key="7c81ef9f28f3cd1f2d056c0b3f063150">
+            <value key="de" value="Identnummer"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="1" alignmentY="center">
+        <elements xsi:type="core:Input" dimX="11">
+          <variable englishName="idno" name="nummer" type="NK86" guiType="INPUT" description="" width="15" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Identnummer" changePriority="A" viewPriority="A" primaryName="num86"/>
+        </elements>
+        <elements xsi:type="core:Button">
+          <variable englishName="yexchgexport" name="yexchgexport" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" custom="true" meaning="exportieren" changePriority="A" viewPriority="A" primaryName="yexchgexport"/>
+          <label viewLanguage="de" key="task_fhead_yexchgexport">
+            <value key="de" value="exportieren"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="2" alignmentY="center">
+        <elements xsi:type="core:Label">
+          <label viewLanguage="de" key="1e276b0ea6737a49b4522b0ae2e29930">
+            <value key="de" value="Suchwort"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="3" alignmentY="center">
+        <elements xsi:type="core:Input" dimX="30">
+          <variable englishName="swd" name="such" type="SWK86" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Suchwort" changePriority="A" viewPriority="A" primaryName="such86"/>
+        </elements>
+      </cells>
+      <cells row="1" alignmentY="center">
+        <elements xsi:type="core:Label">
+          <label viewLanguage="de" key="7d776e0701e14ba07f48857b38b80f88">
+            <value key="de" value="Ursache"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="1" row="1" columnSpan="2" alignmentX="fill" alignmentY="center">
+        <elements xsi:type="core:ReferenceInput" dimX="38" dimY="1">
+          <variable englishName="triggerOfEnt" name="ursache" type="VPK98" guiType="REFERENCE" description="" width="38" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Verweis auf das diesem Vorgang als Verursacher zugeordnete Objekt" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+        </elements>
+      </cells>
+      <cells column="3" row="1" alignmentY="center">
+        <elements xsi:type="core:ReferenceInput" dimX="110" dimY="1" accessType="readonly">
+          <variable englishName="triggerOfEntExt" name="ursacheerw" type="VPT98" guiType="REFERENCE" description="" width="254" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Ursache" changePriority="A" viewPriority="A" primaryName="ausloeser"/>
+        </elements>
+      </cells>
+      <cells row="2" alignmentY="center">
+        <elements xsi:type="core:Label">
+          <label viewLanguage="de" key="ac4f2b92df9f6351a746d9ff8af71a29">
+            <value key="de" value="Projekt"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="1" row="2" alignmentY="center">
+        <elements xsi:type="core:ReferenceInput" dimX="31" dimY="1">
+          <variable englishName="project" name="projekt" type="PS86:1" guiType="REFERENCE" description="" width="31" screenProtection="kerngesteuert" writeable="true" meaning="Projekt" changePriority="A" viewPriority="A" primaryName="projekt"/>
+        </elements>
+      </cells>
+      <cells column="2" row="2" alignmentY="center">
+        <elements xsi:type="core:Label">
+          <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce">
+            <value key="de" value="Titel"/>
+          </label>
+        </elements>
+      </cells>
+      <cells column="3" row="2" alignmentY="center">
+        <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+          <variable englishName="descrOperLang" name="namebspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Bezeichnung in Bediensprache" changePriority="A" viewPriority="A" primaryName="namebspr"/>
+        </elements>
+        <elements xsi:type="core:SubFrameButton" subFrameNumber="1">
+          <label viewLanguage="de" key="865087c7-45e9-4f26-b806-e5cce0bafcc7">
+            <value key="de" value="Editieren"/>
+          </label>
+        </elements>
+      </cells>
+      <cells row="3" columnSpan="4" alignmentX="fill" alignmentY="fill">
+        <elements xsi:type="core:NotebookLayout">
+          <notebookPanes>
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="5551386d1d2615f745b2f433ed3ba400.1">
+                    <value key="de" value="Ablaufbeschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="11" dimY="1">
+                  <variable englishName="sequence" name="ablauf" type="P133:1" guiType="REFERENCE" description="" width="10" screenProtection="kerngesteuert" writeable="true" alias="true" meaning="Ablaufbeschreibung" changePriority="A" viewPriority="A" primaryName="ablaufbeschr"/>
+                </elements>
+              </cells>
+              <cells column="2" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="45" dimY="1">
+                  <variable englishName="sequenceDescr" name="ablaufbez" type="PT133:1" guiType="REFERENCE" description="" width="45" screenProtection="immer geschützt" alias="true" meaning="Bezeichnung der Ablaufbeschreibung" changePriority="A" viewPriority="A" primaryName="ablaufbeschr"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="45b9e7489240c9d70e0df99874feacb8.1">
+                    <value key="de" value="Ablaufschritt"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="11" dimY="1">
+                  <variable englishName="sequenceStatus" name="ablaufzust" type="P133:2" guiType="REFERENCE" description="" width="10" screenProtection="kerngesteuert" writeable="true" meaning="Ablaufzustand" changePriority="A" viewPriority="A" primaryName="ablaufzust"/>
+                </elements>
+              </cells>
+              <cells column="2" row="1" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="45" dimY="1">
+                  <variable englishName="sequenceStatusDescr" name="ablaufzustbez" type="PT133:2" guiType="REFERENCE" description="" width="45" screenProtection="immer geschützt" alias="true" meaning="Bezeichnung des Ablaufzustands" changePriority="A" viewPriority="A" primaryName="ablaufzust"/>
+                </elements>
+                <elements xsi:type="core:Button" dimX="1">
+                  <variable englishName="selSequenceDescr" name="auswablauf" type="BU3" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Button zur Auswahl eines Ablaufschritts" changePriority="A" viewPriority="A" primaryName="auswablauf"/>
+                  <label viewLanguage="de" key="06cebb50c6d82980cd22e362d270ac7c.1">
+                    <value key="de" value="Wählen"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells row="2" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="ec53a8c4f07baed5d8825072c89799be.1">
+                    <value key="de" value="Status"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="2" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ComboBox" dimX="11">
+                  <variable englishName="status" name="status" type="A101" guiType="COMBOBOX" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Status" changePriority="A" viewPriority="A" primaryName="status"/>
+                </elements>
+              </cells>
+              <cells column="2" row="2" alignmentY="center"/>
+              <cells column="3" row="2" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="c2e67c401473bc25589d9c5c42a59f7a.1">
+                    <value key="de" value="Priorität"/>
+                  </label>
+                </elements>
+                <elements xsi:type="core:ComboBox" dimX="50">
+                  <variable englishName="prio" name="prio" type="AZL20060" guiType="COMBOBOX" description="" width="50" screenProtection="kerngesteuert" writeable="true" meaning="Priorität" changePriority="A" viewPriority="A" primaryName="prio"/>
+                </elements>
+              </cells>
+              <cells row="3" columnSpan="4" alignmentY="center">
+                <elements xsi:type="core:Groupline"/>
+              </cells>
+              <cells row="4" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="0f9ec27e5e2d731d84109412ce44330e">
+                    <value key="de" value="Geschäftspartner"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="4" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="11" dimY="1">
+                  <variable englishName="businessPartner" name="partner" type="VPK5" guiType="REFERENCE" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Geschäftspartner" changePriority="A" viewPriority="A" primaryName="partner"/>
+                </elements>
+              </cells>
+              <cells column="2" row="4" columnSpan="2" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="62" dimY="1">
+                  <variable englishName="businessPartnerExt" name="partnererw" type="VPT5" guiType="REFERENCE" description="" width="62" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Geschäftspartner" changePriority="A" viewPriority="A" primaryName="partner"/>
+                </elements>
+              </cells>
+              <cells row="5" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="15f40291299d8c47431c7045a05f9cf8">
+                    <value key="de" value="Artikel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="5" columnSpan="2" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="38" dimY="1">
+                  <variable englishName="productListElem" name="elem" type="VPK1" guiType="REFERENCE" description="" width="18" screenProtection="kerngesteuert" writeable="true" meaning="Fertigungslistenelement" changePriority="A" viewPriority="A" primaryName="elem"/>
+                </elements>
+              </cells>
+              <cells column="3" row="5" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="32" dimY="1">
+                  <variable englishName="productListElementExt" name="elemerw" type="VPT1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Fertigungslistenelement" changePriority="A" viewPriority="A" primaryName="elem"/>
+                </elements>
+              </cells>
+              <cells row="6" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="e693ee049d2d22bad1eb5f702aff0612">
+                    <value key="de" value="Einkaufs-/Verkaufsvorgang"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="6" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="11" dimY="1">
+                  <variable englishName="purchSalesTrans" name="evvorgang" type="VPK10" guiType="REFERENCE" description="" width="11" screenProtection="kerngesteuert" writeable="true" meaning="Vorgang Einkauf/Verkauf" changePriority="A" viewPriority="A" primaryName="evvorgang"/>
+                </elements>
+              </cells>
+              <cells column="2" row="6" columnSpan="2" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="64" dimY="1">
+                  <variable englishName="purchSalesTransExt" name="evvorgangerw" type="VPT10" guiType="REFERENCE" description="" width="64" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung Vorgang Einkauf/Verkauf" changePriority="A" viewPriority="A" primaryName="evvorgang"/>
+                </elements>
+              </cells>
+              <cells row="7" columnSpan="4" alignmentY="center">
+                <elements xsi:type="core:Groupline"/>
+              </cells>
+              <cells row="8" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="c5064c66fe4dc644f374daad95302e16">
+                    <value key="de" value="Schlagwort"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="8" columnSpan="3" alignmentY="center">
+                <elements xsi:type="core:Input" dimX="40">
+                  <variable englishName="keyWord" name="schlag" type="NT30" guiType="INPUT" description="" width="30" screenProtection="kerngesteuert" writeable="true" meaning="Schlagwort" changePriority="A" viewPriority="A" primaryName="schlag"/>
+                </elements>
+              </cells>
+              <cells row="9" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="9" columnSpan="3" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModuleOperLang" name="beschrbspr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Beschreibung in Bediensprache" changePriority="A" viewPriority="A" primaryName="beschrbspr"/>
+                </elements>
+                <elements xsi:type="core:SubFrameButton" subFrameNumber="1">
+                  <label viewLanguage="de" key="6e64ff3b856cac7ac251382250045e24">
+                    <value key="de" value="Editieren"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells row="10" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="ad89b7b8b181f445551fe1bc5c7abe61">
+                    <value key="de" value="Dokument/-liste"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="10" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
+                  <variable englishName="documents" name="dokumente" type="P70:1.2.4" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Angehängte Dokumente" changePriority="A" viewPriority="A" primaryName="dokumente"/>
+                </elements>
+              </cells>
+              <cells column="2" row="10" alignmentY="center"/>
+              <cells column="3" row="10" alignmentY="center"/>
+              <cells row="11" columnSpan="4" alignmentY="center">
+                <elements xsi:type="core:Groupline"/>
+              </cells>
+              <cells row="12" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="17ac93e56edd16cafa7b57979b959292">
+                    <value key="de" value="Intern"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="12" alignmentY="center">
+                <elements xsi:type="core:CheckBox">
+                  <variable englishName="intProcess" name="intern" type="B1" guiType="CHECKBOX" description="" width="1" screenProtection="kerngesteuert" writeable="true" meaning="Interner Vorgang?" changePriority="A" viewPriority="A" primaryName="intern"/>
+                </elements>
+              </cells>
+              <cells column="2" row="12" alignmentY="center"/>
+              <cells column="3" row="12" alignmentY="center"/>
+              <cells row="13" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="fda172f4061a60dbcff762451fc6f9ef">
+                    <value key="de" value="Bearbeiter"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="13" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
+                  <variable englishName="editor" name="bearbeit" type="P11:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiter, der diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="bearbeit"/>
+                </elements>
+              </cells>
+              <cells column="2" row="13" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="32" dimY="1">
+                  <variable englishName="editorExt" name="bearbeiterw" type="PT11:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung des Mitarbeiters, der diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="bearbeit"/>
+                </elements>
+              </cells>
+              <cells row="14" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="c5acec91-5efc-46e1-87bb-3688b891bf4a">
+                    <value key="de" value="Mitarbeiterrolle"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="14" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
+                  <variable englishName="employeeRole" name="mitarbrolle" type="P117:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiterrolle, die diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="mitarbrolle"/>
+                </elements>
+              </cells>
+              <cells column="2" row="14" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="34" dimY="1" accessType="readonly">
+                  <variable englishName="employeeRoleDescr" name="mitarbrollename" type="PT117:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Mitarbeiterrolle, die diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="mitarbrolle"/>
+                </elements>
+              </cells>
+              <cells row="15" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="ad6b2780-0b72-4276-8be0-d36d88ae3337">
+                    <value key="de" value="Team"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="15" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
+                  <variable englishName="team" name="team" type="P117:2" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Team, das diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="team"/>
+                </elements>
+              </cells>
+              <cells column="2" row="15" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="34" dimY="1" accessType="readonly">
+                  <variable englishName="teamDescr" name="teamname" type="PT117:2" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Team, das diesen Vorgang bearbeitet" changePriority="A" viewPriority="A" primaryName="team"/>
+                </elements>
+              </cells>
+              <cells row="16" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="81c1d75a6ee6ac67ebe05478dc1986ab">
+                    <value key="de" value="Verantwortlicher"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="16" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="9" dimY="1">
+                  <variable englishName="confirm" name="bestaet" type="P11:1" guiType="REFERENCE" description="" width="9" screenProtection="kerngesteuert" writeable="true" meaning="Mitarbeiter, der diesen Vorgang bestätigt" changePriority="A" viewPriority="A" primaryName="bestaet"/>
+                </elements>
+              </cells>
+              <cells column="2" row="16" columnSpan="2" alignmentY="center">
+                <elements xsi:type="core:ReferenceInput" dimX="32" dimY="1">
+                  <variable englishName="confirmExt" name="bestaeterw" type="PT11:1" guiType="REFERENCE" description="" width="32" screenProtection="immer geschützt" alias="true" meaning="Sucherweiterung des Mitarbeiters, der diesen Vorgang bestätigt" changePriority="A" viewPriority="A" primaryName="bestaet"/>
+                </elements>
+              </cells>
+              <cells row="17" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="d19acb7d7bd9ab32b81b55359ec35984">
+                    <value key="de" value="Startdatum"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="17" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:DateInput" dimX="9" dimY="1">
+                  <variable englishName="startDateProcess" name="start" type="GD2" guiType="DATE" description="" width="8" screenProtection="kerngesteuert" writeable="true" meaning="Startdatum" changePriority="A" viewPriority="A" primaryName="start"/>
+                </elements>
+              </cells>
+              <cells column="2" row="17" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="b6f55f38d4f05da563f7640685145b1e">
+                    <value key="de" value="Startzeit"/>
+                  </label>
+                </elements>
+                <elements xsi:type="core:DateInput" dimX="9" dimY="1">
+                  <variable englishName="startingTime" name="startzeit" type="Z" guiType="DATE" description="" width="5" screenProtection="kerngesteuert" writeable="true" meaning="Startzeit" changePriority="A" viewPriority="A" primaryName="startzeit"/>
+                </elements>
+              </cells>
+              <cells column="3" row="17" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="37958de49a6922465be7cb2a71a8ee13">
+                    <value key="de" value="Abschlussdatum"/>
+                  </label>
+                </elements>
+                <elements xsi:type="core:DateInput" dimX="9" dimY="1">
+                  <variable englishName="endDate" name="end" type="GD2" guiType="DATE" description="" width="8" screenProtection="kerngesteuert" writeable="true" meaning="Datum, an dem der Vorgang abschließt" changePriority="A" viewPriority="A" primaryName="end"/>
+                </elements>
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="db4209e197388712526406a424ae6c0f">
+                    <value key="de" value="Abschlusszeit"/>
+                  </label>
+                </elements>
+                <elements xsi:type="core:DateInput" dimX="9" dimY="1">
+                  <variable englishName="endTime" name="endzeit" type="Z" guiType="DATE" description="" width="5" screenProtection="kerngesteuert" writeable="true" meaning="Endezeit" changePriority="A" viewPriority="A" primaryName="endzeit"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="4ada966790f4778c4cb39286804fe2a9">
+              <value key="de" value="Allgemeines"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes>
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Button">
+                  <variable englishName="loadLogTab" name="butablad" type="BU3" description="" width="1" screenProtection="zeigen änderbar" writeable="true" skip="true" meaning="Button zum Laden der Protokolle dieses Vorgangs in die Tabelle" changePriority="A" viewPriority="A" primaryName="butablad"/>
+                  <label viewLanguage="de" key="8be49ab0-5d82-40b5-a1d7-f4b8ac7e325b">
+                    <value key="de" value="Tabelle laden"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells row="1" alignmentX="fill" alignmentY="fill">
+                <elements xsi:type="core:Table">
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:Button">
+                      <variable englishName="reloadWithLock" name="dolock" type="BU4" description="" tableEntry="true" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Zeile mit Sperre wiederladen" changePriority="A" viewPriority="A" primaryName="dolock"/>
+                    </elements>
+                    <label viewLanguage="de" key="6145d775d8bd3be2b91a0c620a65bb6d">
+                      <value key="de" value="Ändern"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:CheckBox">
+                      <variable englishName="recLocked" name="lock" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Protokollzeile darf geändert werden" changePriority="A" viewPriority="A" primaryName="lock"/>
+                    </elements>
+                    <label viewLanguage="de" key="b31d7e4af4df00b6a8708006427e3f3f">
+                      <value key="de" value="Gesperrt"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:Input" accessType="readonly">
+                      <variable englishName="responsOperator" name="zeich" type="GL15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+                    </elements>
+                    <label viewLanguage="de" key="ddf3633213983571ca8ab347ac24049f">
+                      <value key="de" value="Bearbeiter"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:DateInput" accessType="readonly">
+                      <variable englishName="logDate" name="pdatum" type="GD2" guiType="DATE" description="" tableEntry="true" width="8" screenProtection="immer geschützt" meaning="Protokolldatum" changePriority="A" viewPriority="A" primaryName="pdatum"/>
+                    </elements>
+                    <label viewLanguage="de" key="9ba51734ced032fd8ec25acfb387a23f">
+                      <value key="de" value="Datum"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:DateInput" accessType="readonly">
+                      <variable englishName="logTime" name="puhrzeit" type="Z" guiType="DATE" description="" tableEntry="true" width="5" screenProtection="immer geschützt" meaning="Protokollzeit" changePriority="A" viewPriority="A" primaryName="puhrzeit"/>
+                    </elements>
+                    <label viewLanguage="de" key="1b2883195ea2abe7f3651d152bedace6">
+                      <value key="de" value="Uhrzeit"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:ComboBox" accessType="readonly">
+                      <variable englishName="suggStatus" name="pstatus" type="A101" guiType="COMBOBOX" description="" tableEntry="true" width="11" screenProtection="immer geschützt" meaning="Status bei Protokollierung" changePriority="A" viewPriority="A" primaryName="pstatus"/>
+                    </elements>
+                    <label viewLanguage="de" key="ec53a8c4f07baed5d8825072c89799be.2">
+                      <value key="de" value="Status"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:Input" accessType="readonly">
+                      <variable englishName="logSequenceStatus" name="protablaufzust" type="GL45" guiType="INPUT" description="" tableEntry="true" width="45" screenProtection="immer geschützt" meaning="Ablaufzustand bei Protokollierung" changePriority="A" viewPriority="A" primaryName="protablaufzust"/>
+                    </elements>
+                    <label viewLanguage="de" key="45b9e7489240c9d70e0df99874feacb8.2">
+                      <value key="de" value="Ablaufschritt"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:ReferenceInput">
+                      <variable englishName="attachObj" name="anhobj" type="VPK98" guiType="REFERENCE" description="" tableEntry="true" width="38" screenProtection="kerngesteuert" writeable="true" meaning="Angehängtes Objekt" changePriority="A" viewPriority="A" primaryName="anhobj"/>
+                    </elements>
+                    <label viewLanguage="de" key="d1b708e0046e5cd5f18476d123192e15">
+                      <value key="de" value="Anhang"/>
+                    </label>
+                  </elements>
+                  <elements xsi:type="core:Column">
+                    <elements xsi:type="core:TextAreaInput" dimY="3">
+                      <variable englishName="descr" name="name" type="T64" guiType="TEXTAREA" description="" tableEntry="true" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Bezeichnung" changePriority="A" viewPriority="A" primaryName="name"/>
+                    </elements>
+                    <label viewLanguage="de" key="32fca0502cabf47fbc3e8dfcb881d814">
+                      <value key="de" value="Bemerkung"/>
+                    </label>
+                  </elements>
+                </elements>
+              </cells>
+              <metaInfo axis="column" stretch="zoom"/>
+              <metaInfo location="1" stretch="zoom"/>
+            </elements>
+            <label viewLanguage="de" key="d1fd5dc41b322741fd161c1765beaf5b">
+              <value key="de" value="Protokoll"/>
+            </label>
+          </notebookPanes>
+        </elements>
+      </cells>
+      <metaInfo axis="column" location="3" stretch="zoom"/>
+      <metaInfo location="3" stretch="zoom"/>
+      <metaInfo axis="column" insets="large" location="2"/>
+    </elements>
+    <label viewLanguage="de" key="8c5713647160f5a68374d7b6e82b8f16">
+      <value key="de" value="Aufgabe"/>
+    </label>
+  </frames>
+  <frames standardHelp="10.1.3.2" frameType="TABLE_DETAIL">
+    <elements xsi:type="core:GridLayout">
+      <cells alignmentX="fill" alignmentY="fill">
+        <elements xsi:type="core:GridLayout">
+          <cells alignmentY="center"/>
+          <cells column="1" columnSpan="2" alignmentY="center">
+            <elements xsi:type="core:Button" dimX="1">
+              <variable englishName="reloadWithLock" name="dolock" type="BU4" description="" tableEntry="true" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Zeile mit Sperre wiederladen" changePriority="A" viewPriority="A" primaryName="dolock"/>
+              <label viewLanguage="de" key="278beda7e266a3fe7e9b969e997961e7">
+                <value key="de" value="Zum Ändern laden"/>
+              </label>
+            </elements>
+          </cells>
+          <cells row="1" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="3e9f131776e434bf735a5d78a8cf1a48">
+                <value key="de" value="Datensatz gesperrt"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="1" alignmentY="center">
+            <elements xsi:type="core:CheckBox">
+              <variable englishName="recLocked" name="lock" type="B1" guiType="CHECKBOX" description="" tableEntry="true" width="1" screenProtection="immer geschützt" skip="true" meaning="Protokollzeile darf geändert werden" changePriority="A" viewPriority="A" primaryName="lock"/>
+            </elements>
+          </cells>
+          <cells column="2" row="1" alignmentY="center"/>
+          <cells row="2" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="ddf3633213983571ca8ab347ac24049f.1">
+                <value key="de" value="Bearbeiter"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="2" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:Input" dimX="15" accessType="readonly">
+              <variable englishName="responsOperator" name="zeich" type="GL15" guiType="INPUT" description="" tableEntry="true" width="15" screenProtection="Multisiteimport änderbar" writeable="true" meaning="Letzter Bearbeiter" changePriority="A" viewPriority="A" primaryName="zeich"/>
+            </elements>
+          </cells>
+          <cells column="2" row="2" alignmentY="center"/>
+          <cells row="3" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="9ba51734ced032fd8ec25acfb387a23f.1">
+                <value key="de" value="Datum"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="3" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:DateInput" dimX="8" dimY="1" accessType="readonly">
+              <variable englishName="logDate" name="pdatum" type="GD2" guiType="DATE" description="" tableEntry="true" width="8" screenProtection="immer geschützt" meaning="Protokolldatum" changePriority="A" viewPriority="A" primaryName="pdatum"/>
+            </elements>
+          </cells>
+          <cells column="2" row="3" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="1b2883195ea2abe7f3651d152bedace6.1">
+                <value key="de" value="Uhrzeit"/>
+              </label>
+            </elements>
+            <elements xsi:type="core:DateInput" dimX="5" dimY="1" accessType="readonly">
+              <variable englishName="logTime" name="puhrzeit" type="Z" guiType="DATE" description="" tableEntry="true" width="5" screenProtection="immer geschützt" meaning="Protokollzeit" changePriority="A" viewPriority="A" primaryName="puhrzeit"/>
+            </elements>
+          </cells>
+          <cells row="4" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="ec53a8c4f07baed5d8825072c89799be.3">
+                <value key="de" value="Status"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="4" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:ComboBox" dimX="11" accessType="readonly">
+              <variable englishName="suggStatus" name="pstatus" type="A101" guiType="COMBOBOX" description="" tableEntry="true" width="11" screenProtection="immer geschützt" meaning="Status bei Protokollierung" changePriority="A" viewPriority="A" primaryName="pstatus"/>
+            </elements>
+          </cells>
+          <cells column="2" row="4" alignmentY="center"/>
+          <cells row="5" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="45b9e7489240c9d70e0df99874feacb8.3">
+                <value key="de" value="Ablaufschritt"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="5" columnSpan="2" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:Input" dimX="45" accessType="readonly">
+              <variable englishName="logSequenceStatus" name="protablaufzust" type="GL45" guiType="INPUT" description="" tableEntry="true" width="45" screenProtection="immer geschützt" meaning="Ablaufzustand bei Protokollierung" changePriority="A" viewPriority="A" primaryName="protablaufzust"/>
+            </elements>
+          </cells>
+          <cells row="6" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="d1b708e0046e5cd5f18476d123192e15.1">
+                <value key="de" value="Anhang"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="6" columnSpan="2" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:ReferenceInput" dimX="38" dimY="1">
+              <variable englishName="attachObj" name="anhobj" type="VPK98" guiType="REFERENCE" description="" tableEntry="true" width="38" screenProtection="kerngesteuert" writeable="true" meaning="Angehängtes Objekt" changePriority="A" viewPriority="A" primaryName="anhobj"/>
+            </elements>
+          </cells>
+          <cells row="7" alignmentY="center">
+            <elements xsi:type="core:Label">
+              <label viewLanguage="de" key="32fca0502cabf47fbc3e8dfcb881d814.1">
+                <value key="de" value="Bemerkung"/>
+              </label>
+            </elements>
+          </cells>
+          <cells column="1" row="7" columnSpan="2" alignmentX="fill" alignmentY="center">
+            <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+              <variable englishName="descr" name="name" type="T64" guiType="TEXTAREA" description="" tableEntry="true" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Bezeichnung" changePriority="A" viewPriority="A" primaryName="name"/>
+            </elements>
+          </cells>
+          <metaInfo insets="large" location="1"/>
+        </elements>
+      </cells>
+      <metaInfo axis="column" stretch="zoom"/>
+    </elements>
+  </frames>
+  <frames standardHelp="10.1.3.2" frameType="SUB" index="1">
+    <elements xsi:type="core:GridLayout">
+      <cells alignmentX="fill" alignmentY="fill">
+        <elements xsi:type="core:NotebookLayout">
+          <notebookPanes scope="CONF_KSPR_de">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.1">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr" name="name" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Bezeichnung" changePriority="A" viewPriority="A" primaryName="name"/>
+                </elements>
+              </cells>
+              <cells column="2" alignmentY="center">
+                <elements xsi:type="core:Button" dimX="1">
+                  <variable englishName="translateText" name="nameueb" type="BU7" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Text übersetzen" changePriority="A" viewPriority="A" primaryName="nameueb"/>
+                  <label viewLanguage="de" key="2dfecde211a4b8b1d4bb453b6c18da6b">
+                    <value key="de" value="Übersetzen"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.1">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentX="fill" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule" name="beschr" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Beschreibung" changePriority="A" viewPriority="A" primaryName="beschr"/>
+                </elements>
+              </cells>
+              <cells column="2" row="1" alignmentY="center">
+                <elements xsi:type="core:Button" dimX="1">
+                  <variable englishName="translateDescrTextModule" name="beschrueb" type="BU7" description="" width="1" screenProtection="kerngesteuert" writeable="true" skip="true" meaning="Text übersetzen" changePriority="A" viewPriority="A" primaryName="beschrueb"/>
+                  <label viewLanguage="de" key="2dfecde211a4b8b1d4bb453b6c18da6b.1">
+                    <value key="de" value="Übersetzen"/>
+                  </label>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="8f0ca2185f684aa4edeae4b25a65239b">
+              <value key="de" value="Deutsch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_en">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.2">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr2" name="name2" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Englisch" changePriority="A" viewPriority="A" primaryName="name2"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.2">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule2" name="beschr2" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Englisch" changePriority="A" viewPriority="A" primaryName="beschr2"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="319be822a88df6a7585360f99e2b62f8">
+              <value key="de" value="Englisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_fr">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.3">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr3" name="name3" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Französisch" changePriority="A" viewPriority="A" primaryName="name3"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.3">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule3" name="beschr3" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Französisch" changePriority="A" viewPriority="A" primaryName="beschr3"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="b42ee3896b0743dada15bf0bbdf830fa">
+              <value key="de" value="Französisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_es">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.4">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr4" name="name4" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Spanisch" changePriority="A" viewPriority="A" primaryName="name4"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.4">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule4" name="beschr4" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Spanisch" changePriority="A" viewPriority="A" primaryName="beschr4"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="d961416d60a912b77d56ea49907c2fbe">
+              <value key="de" value="Spanisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_it">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.5">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr5" name="name5" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Italienisch" changePriority="A" viewPriority="A" primaryName="name5"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.5">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule5" name="beschr5" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Italienisch" changePriority="A" viewPriority="A" primaryName="beschr5"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="1df38244440a25a0e51e5095b8d10738">
+              <value key="de" value="Italienisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_pl">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.6">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr6" name="name6" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Polnisch" changePriority="A" viewPriority="A" primaryName="name6"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.6">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule6" name="beschr6" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Polnisch" changePriority="A" viewPriority="A" primaryName="beschr6"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="d05756b42c92bcd38e11513f6cfbb8d3">
+              <value key="de" value="Polnisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_ru">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.7">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr7" name="name7" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Russisch" changePriority="A" viewPriority="A" primaryName="name7"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.7">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule7" name="beschr7" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Russisch" changePriority="A" viewPriority="A" primaryName="beschr7"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="670dbf8ed552b6a561abb9173f77861e">
+              <value key="de" value="Russisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_hu">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.8">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr8" name="name8" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Ungarisch" changePriority="A" viewPriority="A" primaryName="name8"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.8">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule8" name="beschr8" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Ungarisch" changePriority="A" viewPriority="A" primaryName="beschr8"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="5075658b937858e8d4d687114ef730f0">
+              <value key="de" value="Ungarisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_cs">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.9">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr9" name="name9" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Tschechisch" changePriority="A" viewPriority="A" primaryName="name9"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.9">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule9" name="beschr9" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Tschechisch" changePriority="A" viewPriority="A" primaryName="beschr9"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="1cb1de4f2fb42500a49dff67121030eb">
+              <value key="de" value="Tschechisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_tr">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.10">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr10" name="name10" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Türkisch" changePriority="A" viewPriority="A" primaryName="name10"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.10">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule10" name="beschr10" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Türkisch" changePriority="A" viewPriority="A" primaryName="beschr10"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="f49e68a61fa5d3e37ea3ff8f129afc1c">
+              <value key="de" value="Türkisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_1">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.11">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr11" name="name11" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 1" changePriority="A" viewPriority="A" primaryName="name11"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.11">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule11" name="beschr11" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 1" changePriority="A" viewPriority="A" primaryName="beschr11"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="14c1308788a49d03c5a5a0ebdae91ac9">
+              <value key="de" value="Individuelle Sprache 1"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_2">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.12">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr12" name="name12" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 2" changePriority="A" viewPriority="A" primaryName="name12"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.12">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule12" name="beschr12" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 2" changePriority="A" viewPriority="A" primaryName="beschr12"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="be5ae9331dd979f78bf14bfd9e5524ea">
+              <value key="de" value="Individuelle Sprache 2"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_3">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.13">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr13" name="name13" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 3" changePriority="A" viewPriority="A" primaryName="name13"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.13">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule13" name="beschr13" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Sprache 3" changePriority="A" viewPriority="A" primaryName="beschr13"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="349e8608496e624c7e6e1055999d17ab">
+              <value key="de" value="Individuelle Sprache 3"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_en_US">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.14">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr14" name="name14" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in amerikanischem Englisch" changePriority="A" viewPriority="A" primaryName="name14"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.14">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule14" name="beschr14" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in amerikanischem Englisch" changePriority="A" viewPriority="A" primaryName="beschr14"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="fcd4ae242d446abcdb8fd3f0a7fffb1b">
+              <value key="de" value="Amerikanisches Englisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_ro">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.15">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr15" name="name15" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Rumänisch" changePriority="A" viewPriority="A" primaryName="name15"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.15">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule15" name="beschr15" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Rumänisch" changePriority="A" viewPriority="A" primaryName="beschr15"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="a9d6955ed1fc732a42ac6238a37adae4">
+              <value key="de" value="Rumänisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_id">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.16">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr16" name="name16" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Indonesisch" changePriority="A" viewPriority="A" primaryName="name16"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.16">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule16" name="beschr16" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Indonesisch" changePriority="A" viewPriority="A" primaryName="beschr16"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="aac434f3ef0ae3e5102d5b5a5193b57f">
+              <value key="de" value="Indonesisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_nl">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.17">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr17" name="name17" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Niederländisch" changePriority="A" viewPriority="A" primaryName="name17"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.17">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule17" name="beschr17" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Niederländisch" changePriority="A" viewPriority="A" primaryName="beschr17"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="eba854e3272ba2a40adf9d8fa63e859c">
+              <value key="de" value="Niederländisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_mk">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.18">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr18" name="name18" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Mazedonisch" changePriority="A" viewPriority="A" primaryName="name18"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.18">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule18" name="beschr18" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Mazedonisch" changePriority="A" viewPriority="A" primaryName="beschr18"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="18f5f70d3dea48195db1a6f4fef4a7d8">
+              <value key="de" value="Mazedonisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_bg">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.19">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr19" name="name19" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Bulgarisch" changePriority="A" viewPriority="A" primaryName="name19"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.19">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule19" name="beschr19" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Bulgarisch" changePriority="A" viewPriority="A" primaryName="beschr19"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="1d6c342290ba83f682b04c13a7fdc27f">
+              <value key="de" value="Bulgarisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_sr">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.20">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr20" name="name20" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Serbisch" changePriority="A" viewPriority="A" primaryName="name20"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.20">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule20" name="beschr20" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Serbisch" changePriority="A" viewPriority="A" primaryName="beschr20"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="415637cb0a9e561e861773cda6148ec2">
+              <value key="de" value="Serbisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_sl">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.21">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr21" name="name21" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowenisch" changePriority="A" viewPriority="A" primaryName="name21"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.21">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule21" name="beschr21" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowenisch" changePriority="A" viewPriority="A" primaryName="beschr21"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="383dedda5c5bf85bfbd0d6e68b37dc2e">
+              <value key="de" value="Slowenisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_sk">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.22">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr22" name="name22" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowakisch" changePriority="A" viewPriority="A" primaryName="name22"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.22">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule22" name="beschr22" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Slowakisch" changePriority="A" viewPriority="A" primaryName="beschr22"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="073735b8e1a5bcaac499c2a3b17be832">
+              <value key="de" value="Slowakisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_pt">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.23">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr23" name="name23" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Portugiesisch" changePriority="A" viewPriority="A" primaryName="name23"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.23">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule23" name="beschr23" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Portugiesisch" changePriority="A" viewPriority="A" primaryName="beschr23"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="98abac87aa99030b87b97fd772f08aff">
+              <value key="de" value="Portugiesisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_zh_CN">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.24">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr24" name="name24" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in vereinfachtem Chinesisch" changePriority="A" viewPriority="A" primaryName="name24"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.24">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule24" name="beschr24" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in vereinfachtem Chinesisch" changePriority="A" viewPriority="A" primaryName="beschr24"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="b993ddf3db9e1d2a03ede1219491a4c0">
+              <value key="de" value="Chinesisch vereinfacht"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_zh_TW">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.25">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr25" name="name25" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in traditionellem Chinesisch" changePriority="A" viewPriority="A" primaryName="name25"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.25">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule25" name="beschr25" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in traditionellem Chinesisch" changePriority="A" viewPriority="A" primaryName="beschr25"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="f54caf4a2646b43d69b776dec0fe03f4">
+              <value key="de" value="Chinesisch traditionell"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_el">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.26">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr26" name="name26" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Griechisch" changePriority="A" viewPriority="A" primaryName="name26"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.26">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule26" name="beschr26" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Griechisch" changePriority="A" viewPriority="A" primaryName="beschr26"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="11fdee8f59d1e64558f1752d0eafa2a9">
+              <value key="de" value="Griechisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_th">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.27">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr27" name="name27" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Thailändisch" changePriority="A" viewPriority="A" primaryName="name27"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.27">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule27" name="beschr27" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Thailändisch" changePriority="A" viewPriority="A" primaryName="beschr27"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="bf4a09eb3f2874e3a53cb31669f8d3bf">
+              <value key="de" value="Thailändisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_ar">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.28">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr28" name="name28" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Arabisch" changePriority="A" viewPriority="A" primaryName="name28"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.28">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule28" name="beschr28" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Arabisch" changePriority="A" viewPriority="A" primaryName="beschr28"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="b8bdb0ac65afb74c71fb799bfbf078d8">
+              <value key="de" value="Arabisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_fa">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.29">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr29" name="name29" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Persisch" changePriority="A" viewPriority="A" primaryName="name29"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.29">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule29" name="beschr29" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Persisch" changePriority="A" viewPriority="A" primaryName="beschr29"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="d15a2d23b3394ce52362c06a6cce9da4">
+              <value key="de" value="Persisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_vi">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.30">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr30" name="name30" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Vietnamesisch" changePriority="A" viewPriority="A" primaryName="name30"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.30">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule30" name="beschr30" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Vietnamesisch" changePriority="A" viewPriority="A" primaryName="beschr30"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="e0775193c1844133c9b9627d86acb704">
+              <value key="de" value="Vietnamesisch"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_ur">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.31">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr31" name="name31" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Urdu" changePriority="A" viewPriority="A" primaryName="name31"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.31">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule31" name="beschr31" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Urdu" changePriority="A" viewPriority="A" primaryName="beschr31"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="f8aa4393427c2f2fd010f7adc5812517">
+              <value key="de" value="Urdu"/>
+            </label>
+          </notebookPanes>
+          <notebookPanes scope="CONF_KSPR_ja">
+            <elements xsi:type="core:GridLayout">
+              <cells alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="18a8022569d6ced829f833aa855530ce.32">
+                    <value key="de" value="Titel"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="1">
+                  <variable englishName="descr32" name="name32" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Japanisch" changePriority="A" viewPriority="A" primaryName="name32"/>
+                </elements>
+              </cells>
+              <cells row="1" alignmentY="center">
+                <elements xsi:type="core:Label">
+                  <label viewLanguage="de" key="35bedb45241d6b3f70fa6f56197c3361.32">
+                    <value key="de" value="Beschreibung"/>
+                  </label>
+                </elements>
+              </cells>
+              <cells column="1" row="1" alignmentY="center">
+                <elements xsi:type="core:TextAreaInput" dimX="64" dimY="4">
+                  <variable englishName="descrTextModule32" name="beschr32" type="T64" guiType="TEXTAREA" description="" width="64" screenProtection="kerngesteuert" writeable="true" meaning="Text in Japanisch" changePriority="A" viewPriority="A" primaryName="beschr32"/>
+                </elements>
+              </cells>
+            </elements>
+            <label viewLanguage="de" key="7c3395ab-2ccc-412e-a027-c4b805ef3ba6">
+              <value key="de" value="Japanisch"/>
+            </label>
+          </notebookPanes>
+        </elements>
+      </cells>
+      <metaInfo axis="column" stretch="zoom"/>
+      <metaInfo stretch="zoom"/>
+    </elements>
+  </frames>
+</screen:Screen>

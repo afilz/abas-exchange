@@ -1,0 +1,33 @@
+database master Lieferant {
+	number 1
+	classname Vendor
+	structure Lieferantenkontakt {
+		groupNumber 2
+		head {
+			field B1 exported {
+				label ""
+				heading ""
+				description Exportiert
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+			field B1 resigned {
+				label ""
+				heading ""
+				description "Kontakt ist ausgeschieden"
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+			field BU3 skip exportbutton {
+				label ""
+				heading ""
+				description "Kontakt nach Exchange Exportieren"
+				screen VIEW_EDITABLE
+				showPriority A
+				changePriority A
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+database master Firma {
+	number 12
+	classname Company
+	structure Betriebsdaten {
+		groupNumber 10
+		head {
+			field GL128 auth {
+				label ""
+				heading ""
+				description "Azure Tenant-Id"
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+			field GL128 clientid {
+				label ""
+				heading ""
+				description "Azure Application-Id"
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+			field GL128 secret {
+				label ""
+				heading ""
+				description "Azure Application Password"
+				screen EDITABLE
+				showPriority A
+				changePriority A
+			}
+		}
+	}
+}

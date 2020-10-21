@@ -1,0 +1,17 @@
+database master Vorgang {
+    number 86
+    classname Transaction
+    structure Aufgabenkopf {
+        groupNumber 2
+        head {
+            field BU3 skip export {
+                label ""
+                heading ""
+                description "Exportieren"
+                screen VIEW_EDITABLE
+                showPriority A
+                changePriority A
+            }
+        }
+    }
+}

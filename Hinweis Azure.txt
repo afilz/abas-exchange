@@ -1,0 +1,3 @@
+Zum Testen & ausprobieren empfiehlt sich das Microsoft 365 Developer Program
+
+https://docs.microsoft.com/de-de/office/developer-program/microsoft-365-developer-program

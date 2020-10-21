@@ -1,0 +1,119 @@
+{
+  "handlers": [
+    {
+      "id": {
+        "databaseName": "0",
+        "groupName": "2",
+        "table": false
+      },
+      "name": "de.abas.abex.eventhandler.CustomerContactEventHandler",
+      "globalScreenEvents": {
+        "events": "SCREEN_VALIDATION"
+      },
+      "globalRowEvents": {
+        "events": ""
+      },
+      "headerFieldEvents": {
+        "fields": [
+          {
+            "name": "yexchgexportbutton",
+            "events": "BUTTON_AFTER"
+          }
+        ]
+      },
+      "tableFieldEvents": {}
+    },
+    {
+      "id": {
+        "databaseName": "0",
+        "groupName": "2",
+        "table": false
+      },
+      "name": "de.abas.abex.eventhandler.CustomerContactEventHandler",
+      "globalScreenEvents": {
+        "events": "SCREEN_VALIDATION"
+      },
+      "globalRowEvents": {
+        "events": ""
+      },
+      "headerFieldEvents": {
+        "fields": [
+          {
+            "name": "yexchgexportbutton",
+            "events": "BUTTON_AFTER"
+          }
+        ]
+      },
+      "tableFieldEvents": {}
+    },
+    {
+      "id": {
+        "databaseName": "0",
+        "groupName": "7",
+        "table": false
+      },
+      "name": "de.abas.abex.eventhandler.ProspectContactEventHandler",
+      "globalScreenEvents": {
+        "events": "SCREEN_VALIDATION"
+      },
+      "globalRowEvents": {
+        "events": ""
+      },
+      "headerFieldEvents": {
+        "fields": [
+          {
+            "name": "yexchgexportbutton",
+            "events": "BUTTON_AFTER"
+          }
+        ]
+      },
+      "tableFieldEvents": {}
+    },
+    {
+      "id": {
+        "databaseName": "1",
+        "groupName": "2",
+        "table": false
+      },
+      "name": "de.abas.abex.eventhandler.VendorContactEventHandler",
+      "globalScreenEvents": {
+        "events": "SCREEN_VALIDATION"
+      },
+      "globalRowEvents": {
+        "events": ""
+      },
+      "headerFieldEvents": {
+        "fields": [
+          {
+            "name": "yexchgexportbutton",
+            "events": "BUTTON_AFTER"
+          }
+        ]
+      },
+      "tableFieldEvents": {}
+    },
+    {
+      "id": {
+        "databaseName": "86",
+        "groupName": "2",
+        "table": false
+      },
+      "name": "de.abas.abex.eventhandler.TaskHeaderEventHandler",
+      "globalScreenEvents": {
+        "events": ""
+      },
+      "globalRowEvents": {
+        "events": ""
+      },
+      "headerFieldEvents": {
+        "fields": [
+          {
+            "name": "yexchgexport",
+            "events": "BUTTON_AFTER"
+          }
+        ]
+      },
+      "tableFieldEvents": {}
+    }
+  ]
+}
