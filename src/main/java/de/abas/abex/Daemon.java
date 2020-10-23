@@ -99,7 +99,7 @@ public class Daemon {
 			}
 			for (ProspectContact cContact : dao.getProspectsContactList(true)) {
 				ExchangeContact contact = new ExchangeContact();
-				contact.nickName = ExchangeContact.PREFIX_CUSTOMER + cContact.getIdno().toString();
+				contact.nickName = ExchangeContact.PREFIX_PROSPECT + cContact.getIdno().toString();
 
 				if (exchange.deleteContact(contact)) {
 					dao.confirmProspectContactExported(cContact);
@@ -107,7 +107,7 @@ public class Daemon {
 			}
 			for (VendorContact cContact : dao.getVendorsContactList(true)) {
 				ExchangeContact contact = new ExchangeContact();
-				contact.nickName = ExchangeContact.PREFIX_CUSTOMER + cContact.getIdno().toString();
+				contact.nickName = ExchangeContact.PREFIX_VENDOR + cContact.getIdno().toString();
 
 				if (exchange.deleteContact(contact)) {
 					dao.confirmVendorContactExported(cContact);
