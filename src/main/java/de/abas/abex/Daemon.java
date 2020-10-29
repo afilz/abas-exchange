@@ -69,8 +69,8 @@ public class Daemon {
 			credentials.setClientId(cData.getYexchgclientid());
 			credentials.setSecret(cData.getYexchgsecret());
 
-			Exchange exchangeConnection = new Exchange();
-			exchangeConnection.doAuthentication(credentials);
+			exchange = new Exchange();
+			exchange.doAuthentication(credentials);
 		} catch (Exception e) {
 			logger.log(Level.ERROR, e.getMessage());
 		}
@@ -92,7 +92,7 @@ public class Daemon {
 			for (CustomerContact cContact : dao.getCustomersContactList(true)) {
 				ExchangeContact contact = new ExchangeContact();
 				contact.nickName = ExchangeContact.PREFIX_CUSTOMER + cContact.getIdno().toString();
-
+				
 				if (exchange.deleteContact(contact)) {
 					dao.confirmCustomerContactExported(cContact);
 				}
@@ -115,6 +115,7 @@ public class Daemon {
 			}
 		} catch (Exception e) {
 			logger.error(e.getMessage());
+			e.printStackTrace();
 		}
 
 		logger.info("Deleting from contacts has ended");
